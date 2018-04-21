@@ -5,7 +5,7 @@
         </div>
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo FULL_URL ?>/#"><span data-feather="home"></span> Dashboard <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?php echo FULL_URL ?>dashboard/#"><span data-feather="home"></span> Dashboard <span class="sr-only">(current)</span></a>
             </li> 
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo FULL_URL ?>dashboard/product"><span data-feather="shopping-cart"></span> Products</a>

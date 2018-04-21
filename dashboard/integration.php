@@ -2,7 +2,7 @@
 <?php 
 
 include_once( '../config.php' );
-include_once( '/class/Session.php' );
+include_once( __DIR__.'/../class/Session.php' );
 
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ include_once( '/class/Session.php' );
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="../favicon.ico">
     <title><?php echo APP_NAME ?></title>
 
     <!-- Bootstrap core CSS -->
