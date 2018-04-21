@@ -1,0 +1,3 @@
+﻿When the integration
+Please don't delete this log.txt file.
+The text is used for writing log function.
