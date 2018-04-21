@@ -2,7 +2,7 @@
 
 Modify the config.php file
 
-## Include .htaccess in root and dashboard directory
+### Include .htaccess in root and dashboard directory to allow https and non .php extension
 
 ```
 RewriteEngine On
