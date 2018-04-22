@@ -142,3 +142,11 @@ body {
       position: absolute;
       z-index: 20
     }
+
+    /*
+     * Resources
+     */
+
+     .resources .filter button {
+       margin-right: 5px;
+     }
