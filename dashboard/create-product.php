@@ -97,6 +97,10 @@ include_once( __DIR__.'/../class/Session.php' );
         min-height: 200px;
         border: 1px solid #ced4da
     }
+
+    .fake-form .entry {
+        margin-bottom: 10px;
+    }
     </style>
 </head>
 <body>
@@ -227,7 +231,40 @@ include_once( __DIR__.'/../class/Session.php' );
                                                 </div> 
                                             </div> 
                                         </div>
+                                        <div class="col-md-12">   
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="p_require_translator">
+                                                <label class="form-check-label" for="p_require_translator">Request a Translator</label>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="row"> 
+                                        <div class="col-md-12"> 
+                                            <div class="form-group">
+                                                <label for="p_html_content">HTML Content </label>
+                                                <div class="input-group"> 
+                                                    <textarea class="form-control" id="p_html_content" placeholder="" rows="10"></textarea>
+                                                </div> 
+                                            </div> 
+                                        </div>
+                                    </div> 
+                                    <div class="row"> 
+                                        <div class="control-group col-md-12" id="fields">
+                                            <label class="control-label" for="field1">Additional Custom Fields <span data-feather="info"></span></label>
+                                            <div class="controls">
+                                                <div class="fake-form"> 
+                                                    <div class="entry input-group col-xs-3">
+                                                        <input class="form-control" name="fields[]" type="text" placeholder="'Field Name', 'Field Value'" />
+                                                        <span class="input-group-btn">
+                                                            <button class="btn btn-success btn-add" type="button">
+                                                                <span data-feather="plus"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
                                 </div>
                             </div> 
                             <!-- <product-creation></product-creation> -->
@@ -380,6 +417,25 @@ include_once( __DIR__.'/../class/Session.php' );
         jQuery('#p_price').on('change', function(){
             jQuery('#p_price_yuan').val(jQuery('#p_price').val()*4.82);
         })
+
+        jQuery(document).on('click', '.btn-add', function(e) {
+                e.preventDefault();
+                var controlForm = jQuery('.controls .fake-form:first'),
+                    currentEntry = jQuery(this).parents('.entry:first'),
+                    newEntry = jQuery(currentEntry.clone()).appendTo(controlForm);
+
+                newEntry.find('input').val('');
+                controlForm.find('.entry:not(:last) .btn-add')
+                    .removeClass('btn-add').addClass('btn-remove')
+                    .removeClass('btn-success').addClass('btn-danger')
+                    .html('<span data-feather="plus"></span>');
+                feather.replace();
+            }).on('click', '.btn-remove', function(e) {
+                jQuery(this).parents('.entry:first').remove();
+
+                e.preventDefault();
+                return false;
+            });
     </script>
 </body>
 </html>

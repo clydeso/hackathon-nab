@@ -34,50 +34,145 @@ include_once( __DIR__.'/../class/Session.php' );
                     <div class="col-md-12">
                         <button type="button" class="btn btn-primary btn-sm float-right ml-2" onclick="window.location='<?php echo FULL_URL ?>dashboard/create-product'">Create product</button> 
                         <button type="button" class="btn btn-primary btn-sm float-right" onclick="window.location='<?php echo FULL_URL ?>dashboard/import-product'">Import CSV</button>
-                        <h2>Product</h2>
-                        <p>You currently have no products yet.</p>
+                        <h2>Product</h2> 
                     </div>
                 </div>
-                <!-- <div class="row"> 
+                <div class="row">
                     <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img alt="Thumbnail [100%x225]" class="card-img-top" data-holder-rendered="true" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Taobao.com" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_162e8329413%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_162e8329413%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.71875%22%20y%3D%22120.15%22%3ETaobao.com%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" style="height: 225px; width: 100%; display: block;">
-                            <div class="card-body">
-                                <p class="card-text">Taobao is a Chinese online shopping website, headquartered in Hangzhou, China, and is a subsidiary of Alibaba Group.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary" type="button">Connect</button> <button class="btn btn-sm btn-outline-secondary" type="button">Learn More</button>
-                                    </div>
+                        <div class="card"> 
+                            <div class="card-header"> 
+                                <div class="row">
+                                    <div class="col-md-3"><img src="<?php echo FULL_URL ?>assets/images/products/1.jpg" alt="Product 1" style="width:100%"></div>
+                                    <div class="col-md-6">Thank You Hand Lotion Botanical Patchouli & Vanilla 500ML</div>
+                                    <div class="col-md-3"><a href="#viewproduct" class="float-right">Edit | View</a></div>
+                                </div> 
+                            </div>
+                            <div class="card-body">  
+                                <div class="row">
+                                    <div class="col-md-6">Product Pricing</div>
+                                    <div class="col-md-6">$6 AUD | ¥28.24</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Platform</div>
+                                    <div class="col-md-6">Taobao.com</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Product Views</div>
+                                    <div class="col-md-6">20000</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Sessions</div>
+                                    <div class="col-md-6">500</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">YTD Revenue</div>
+                                    <div class="col-md-6">$500.00</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Bounce Rate</div>
+                                    <div class="col-md-6">20%</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Ratings</div>
+                                    <div class="col-md-6">4 out of 5</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Status</div>
+                                    <div class="col-md-6">Published</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img alt="Thumbnail [100%x225]" class="card-img-top" data-holder-rendered="true" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Tmall.com" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_162e8329415%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_162e8329415%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.71875%22%20y%3D%22120.15%22%3ETmall.com%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" style="height: 225px; width: 100%; display: block;">
-                            <div class="card-body">
-                                <p class="card-text">Tmall.com, formerly Taobao Mall, is a Chinese-language website for business-to-consumer online retail, spun off from Taobao, operated in China by Alibaba Group.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary" type="button">Connect</button> <button class="btn btn-sm btn-outline-secondary" type="button">Learn More</button>
-                                    </div>
+                        <div class="card">
+                            <div class="card-header"> 
+                                <div class="row">
+                                    <div class="col-md-3"><img src="<?php echo FULL_URL ?>assets/images/products/1.jpg" alt="Product 1" style="width:100%"></div>
+                                    <div class="col-md-6">Thank You Hand Lotion Botanical Patchouli & Vanilla 500ML</div>
+                                    <div class="col-md-3"><a href="#viewproduct" class="float-right">Edit | View</a></div>
+                                </div> 
+                            </div>
+                            <div class="card-body"> 
+                                <div class="row">
+                                    <div class="col-md-6">Product Pricing</div>
+                                    <div class="col-md-6">$6 AUD | ¥28.24</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Platform</div>
+                                    <div class="col-md-6">Tmall.com</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Product Views</div>
+                                    <div class="col-md-6">40000</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Sessions</div>
+                                    <div class="col-md-6">2000</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">YTD Revenue</div>
+                                    <div class="col-md-6">$2000.00</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Bounce Rate</div>
+                                    <div class="col-md-6">5%</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Ratings</div>
+                                    <div class="col-md-6">5 out of 5</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">Status</div>
+                                    <div class="col-md-6">Published</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img alt="Thumbnail [100%x225]" class="card-img-top" data-holder-rendered="true" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Alibaba" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22348%22%20height%3D%22225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20348%20225%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_162e8329415%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A17pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_162e8329415%22%3E%3Crect%20width%3D%22348%22%20height%3D%22225%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22116.71875%22%20y%3D%22120.15%22%3EAlibaba.com%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" style="height: 225px; width: 100%; display: block;">
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary" type="button">Connect</button> <button class="btn btn-sm btn-outline-secondary" type="button">Learn More</button>
-                                    </div>
+                        <div class="card">
+                            <div class="card-header"> 
+                                <div class="row">
+                                    <div class="col-md-3"><img src="<?php echo FULL_URL ?>assets/images/products/1.jpg" alt="Product 1" style="width:100%"></div>
+                                    <div class="col-md-6">Thank You Hand Lotion Botanical Patchouli & Vanilla 500ML</div>
+                                    <div class="col-md-3"><a href="#viewproduct" class="float-right">Edit | View</a></div>
+                                </div> 
+                            </div>
+                            <div class="card-body"> 
+                                <div class="row">
+                                    <div class="col-md-6">Product Pricing</div>
+                                    <div class="col-md-6">$6 AUD | ¥28.24</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Platform</div>
+                                    <div class="col-md-6">Tmall.com</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Product Views</div>
+                                    <div class="col-md-6">0</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Sessions</div>
+                                    <div class="col-md-6">0</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">YTD Revenue</div>
+                                    <div class="col-md-6">0</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Bounce Rate</div>
+                                    <div class="col-md-6">n/a</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-6">Ratings</div>
+                                    <div class="col-md-6">n/a</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">Status</div>
+                                    <div class="col-md-6">Pending</div>
                                 </div>
                             </div>
                         </div>
-                    </div>  -->
+                    </div>
                 </div>
             </main>
         </div>
