@@ -70,7 +70,7 @@ include_once( __DIR__.'/../class/Session.php' );
 
                             <div class="col-md-6">
                               <div class="card mb-3">
-                                <img src="<?php echo FULL_URL ?>assets/images/placeholders/writing.jpg" alt="" class=" card-img-top">
+                                <img src="<?php echo FULL_URL ?>assets/images/placeholders/flowchart.jpg" alt="" class=" card-img-top">
                                 <div class="card-body">
                                   <h5 class="card-title">Quick start quide.</h5>
                                   <p class="card-text">This content is a little bit longer.</p>
@@ -81,7 +81,7 @@ include_once( __DIR__.'/../class/Session.php' );
 
                             <div class="col-md-6">
                               <div class="card mb-3">
-                                <img src="<?php echo FULL_URL ?>assets/images/placeholders/writing.jpg" alt="" class=" card-img-top">
+                                <img src="<?php echo FULL_URL ?>assets/images/placeholders/group.jpg" alt="" class=" card-img-top">
                                 <div class="card-body">
                                   <h5 class="card-title">More resources</h5>
                                   <p class="card-text">More text here.</p>
