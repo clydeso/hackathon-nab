@@ -11,7 +11,7 @@ include_once( __DIR__.'/../class/Session.php' );
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content=""> 
+    <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
     <title><?php echo APP_NAME ?></title>
 
@@ -32,8 +32,8 @@ include_once( __DIR__.'/../class/Session.php' );
             <main class="col-md-9 ml-sm-auto col-lg-10 px-4" role="main">
                 <div class="row py-5">
                     <div class="col-md-12">
-                        <h2>Quickstart</h2>
-                        <p></p>
+                        <h2>Need Help?</h2>
+                        <p>All your knowledge base and resources to understand the Chinese market.</p>
                     </div>
                 </div>
                 <!-- <div class="row"> 
