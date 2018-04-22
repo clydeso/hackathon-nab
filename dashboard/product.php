@@ -32,7 +32,8 @@ include_once( __DIR__.'/../class/Session.php' );
             <main class="col-md-9 ml-sm-auto col-lg-10 px-4" role="main">
                 <div class="row py-5">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-primary btn-sm float-right" onclick="window.location='<?php echo FULL_URL ?>dashboard/create-product'"><span data-feather="plus"></span> &nbsp; Create product</button>
+                        <button type="button" class="btn btn-primary btn-sm float-right ml-2" onclick="window.location='<?php echo FULL_URL ?>dashboard/create-product'">Create product</button> 
+                        <button type="button" class="btn btn-primary btn-sm float-right" onclick="window.location='<?php echo FULL_URL ?>dashboard/import-product'">Import CSV</button>
                         <h2>Product</h2>
                         <p>You currently have no products yet.</p>
                     </div>
