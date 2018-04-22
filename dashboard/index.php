@@ -47,14 +47,16 @@ include_once( __DIR__.'/../class/Session.php' );
                         <h5>Listing Performance</h5>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-body"> 
+                                <div class="card"> 
+                                    <div class="card-header"> 
                                         <div class="row">
-                                            <div class="col-md-3">Product Pricing</div>
-                                            <div class="col-md-5">Thank You Hand Lotion Botanical Patchouli & Vanilla 500ML</div>
-                                            <div class="col-md-4"><a href="#viewproduct">View Product</a></div>
+                                            <div class="col-md-3"><img src="<?php echo FULL_URL ?>assets/images/products/1.jpg" alt="Product 1" style="width:100%"></div>
+                                            <div class="col-md-6">Thank You Hand Lotion Botanical Patchouli & Vanilla 500ML</div>
+                                            <div class="col-md-3"><a href="#viewproduct" class="float-right">View</a></div>
                                         </div> 
-                                        <div class="row py-3">
+                                    </div>
+                                    <div class="card-body">  
+                                        <div class="row">
                                             <div class="col-md-6">Product Pricing</div>
                                             <div class="col-md-6">$6 AUD | ¥28.24</div>
                                         </div> 
@@ -87,13 +89,15 @@ include_once( __DIR__.'/../class/Session.php' );
                             </div>
                             <div class="col-md-6">
                                 <div class="card">
+                                    <div class="card-header"> 
+                                        <div class="row">
+                                            <div class="col-md-3"><img src="<?php echo FULL_URL ?>assets/images/products/1.jpg" alt="Product 1" style="width:100%"></div>
+                                            <div class="col-md-6">Thank You Hand Lotion Botanical Patchouli & Vanilla 500ML</div>
+                                            <div class="col-md-3"><a href="#viewproduct" class="float-right">View</a></div>
+                                        </div> 
+                                    </div>
                                     <div class="card-body"> 
                                         <div class="row">
-                                            <div class="col-md-3">Product Pricing</div>
-                                            <div class="col-md-5">Thank You Hand Lotion Botanical Patchouli & Vanilla 500ML</div>
-                                            <div class="col-md-4"><a href="#viewproduct">View Product</a></div>
-                                        </div> 
-                                        <div class="row py-3">
                                             <div class="col-md-6">Product Pricing</div>
                                             <div class="col-md-6">$6 AUD | ¥28.24</div>
                                         </div> 
